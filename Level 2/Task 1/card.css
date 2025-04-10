@@ -1,0 +1,44 @@
+/* Card Feature*/
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 50px;
+  }
+
+  .card {
+    flex: 1 1 45%;
+    min-width: 300px;
+    border: 1px solid #ccc;
+  }
+
+  .uk-cover-container {
+    position: relative;
+    height: 250px;
+  }
+
+  .uk-navbar-container{
+    padding-left: 20px;
+  }
+
+  @media (max-width: 700px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  }
+
+  /* Main Body*/
+  .uk-text-center{
+    margin-top: 0;
+  }
+
+  .uk-text{
+    margin: 20px 20px 20px 20px;
+    padding-left: 25px;
+    text-align: justify;
+  }
+
+  .t2{
+    padding-left: 25px;
+    padding-right: 30px;
+  }

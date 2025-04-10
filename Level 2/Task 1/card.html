@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Cards</title>
+  <link rel="stylesheet" href="card.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/css/uikit.min.css" />
 </head>
 <body>
-    
+    <!--Naviagtion Bar-->
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Visit Us</a></li>
+                <li><a href="#">Reach Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--main body content-->
+    <h1 class="uk-text-center">Place where art originates</h1>
+    <div class="card-column" style="display: flex;">
+            <p class="uk-text t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt u</p>
+            <p class="uk-text t2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <!--wikipedia article about france here-->
+
+    <!--UIKit card using media and text-->
+    <div class="card-row">
+        
+        <div class="uk-card uk-card-hover uk-card-default card">
+        <div class="uk-card-media-top uk-cover-container">
+            <img class="card-top" src="image 1.png" alt="Media Left" uk-cover />
+            <canvas width="500" height="300"></canvas>
+        </div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Top</h3>
+            <p>This is the left card. It will appear side by side with the next card on most screens.</p>
+        </div>
+        </div>
+        
+        <div class="uk-card uk-card-hover uk-card-secondary card">
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Bottom</h3>
+            <p>This is the left card. It will appear side by side with the next card on most screens. This is the left card. It will appear side by side with the next card on most screens.</p>
+        </div>
+        <div class="uk-card-media-bottom uk-cover-container">
+            <img class="card-down" src="image 2.png" alt="Media Right" uk-cover />
+            <canvas width="500" height="300"></canvas>
+        </div>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-secondary card">
+            <div class="uk-card-media-top uk-cover-container">
+            <img class="card-top" src="image 3.png" alt="Media Left" uk-cover />
+            <canvas width="500" height="300"></canvas>
+            </div>
+            <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Top</h3>
+            <p>This is the left card. It will appear side by side with the next card on most screens.</p>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-default card">
+            <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Bottom</h3>
+            <p>This is the left card. It will appear side by side with the next card on most screens. This is the left card. It will appear side by side with the next card on most screens.</p>
+            </div>
+            <div class="uk-card-media-bottom uk-cover-container">
+            <img class="card-down" src="image 4.png" alt="Media Right" uk-cover />
+            <canvas width="500" height="300"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer description simple-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>

@@ -12,39 +12,86 @@
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Visit Us</a></li>
-                <li><a href="#">Reach Out</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://in.ambafrance.org/" target="_blank">Visit Us</a></li>
+                <li><a href="#discover">Discover</a></li>
             </ul>
         </div>
     </nav>
 
     <!--main body content-->
-    <h1 class="uk-text-center">Place where art originates</h1>
-    <div class="card-column" style="display: flex;">
-            <p class="uk-text t1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt u</p>
-            <p class="uk-text t2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
+    <h1 class="uk-text-center">Cradle of Artistic Excellence</h1>
+    <div class="card-column uk-container" style="text-align: center;">
+              <i class="uk-text-center" >
+                "If cave painting and some ancient works are not counted, 
+                <br>the Middle Ages were the first great epoch of French painting."
+              </i>
+              <p style="text-align: center; font-family:'Courier New', Courier; margin-top: 1px;">- Valentin Grivet</p>
+            <!-- <p class="uk-text t2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>-->
+    </div> 
+
+    <!--Slideshow-->
+    <div class="custom-slideshow" uk-slideshow="animation: push">
+
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+  
+          <div class="uk-slideshow-items">
+              <div>
+                  <img src="image 1.png" alt="">
+              </div>
+              <div>
+                  <img src="image 2.png" alt="">
+              </div>
+              <div>
+                  <img src="image 3.png" alt="">
+              </div>
+          </div>
+  
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+      </div>
+  
+      <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+  </div>
+  
     <!--wikipedia article about france here-->
+    <div id="home" class="uk-text-justify">
+      <p class="uk-dropcap">
+        France stands as one of the world's most significant artistic centers, with a legacy that has shaped global art history across centuries. 
+        Paris, often called the "Capital of Art," has been a magnetic force drawing creative minds from around the world.
+        <br>Art in France is not just in galleries — it spills into gardens, dances through operas, and echoes in the rhythm of street performers along the Seine. 
+        From classical to contemporary, France is a living canvas of inspiration, waiting to be explored.
+      </p>
+      <p>
+        France's commitment to artistic cultivation continues today through its world-class art schools, vibrant gallery scenes, and public support for the arts. 
+        The country remains at the forefront of contemporary artistic expression while honoring its unparalleled artistic heritage.
+      </p>
+    </div>
 
     <!--UIKit card using media and text-->
-    <div class="card-row">
+    <div id="discover" class="card-row">
         
-        <div class="uk-card uk-card-hover uk-card-default card">
+        <div class="uk-card uk-box-shadow-small uk-box-shadow-hover-large uk-card-default card">
         <div class="uk-card-media-top uk-cover-container">
             <img class="card-top" src="image 1.png" alt="Media Left" uk-cover />
             <canvas width="500" height="300"></canvas>
         </div>
         <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>This is the left card. It will appear side by side with the next card on most screens.</p>
+            <h3 class="uk-card-title">Palais De La Bourse</h3>
+            <p>Where commerce met culture — step into Marseille’s grand hall of elegance, 
+              where 19th-century architecture speaks the language of power and art. Located in Marseille, 
+              it historic building symbolizing the city’s commercial heritage and maritime prosperity.
+            </p>
         </div>
         </div>
         
-        <div class="uk-card uk-card-hover uk-card-secondary card">
+        <div class="uk-card uk-box-shadow-small uk-box-shadow-hover-large uk-card-secondary card">
         <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Bottom</h3>
-            <p>This is the left card. It will appear side by side with the next card on most screens. This is the left card. It will appear side by side with the next card on most screens.</p>
+            <h3 class="uk-card-title">Louvre Museum</h3>
+            <p>More than a museum — the Louvre is a timeless journey through the soul of art, 
+              where every corridor echoes with genius.
+              It is world’s largest art museum and home to iconic masterpieces like the Mona Lisa and Venus de Milo.
+            </p>
         </div>
         <div class="uk-card-media-bottom uk-cover-container">
             <img class="card-down" src="image 2.png" alt="Media Right" uk-cover />
@@ -52,21 +99,29 @@
         </div>
         </div>
 
-        <div class="uk-card uk-card-hover uk-card-secondary card">
+        <div class="uk-card uk-box-shadow-small uk-box-shadow-hover-large uk-card-secondary card">
             <div class="uk-card-media-top uk-cover-container">
             <img class="card-top" src="image 3.png" alt="Media Left" uk-cover />
             <canvas width="500" height="300"></canvas>
             </div>
             <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
-            <p>This is the left card. It will appear side by side with the next card on most screens.</p>
+            <h3 class="uk-card-title">Conciergerie</h3>
+            <p>
+              From royal grandeur to revolutionary grit — 
+              witness the dramatic artistry carved into the walls of France’s most storied prison. 
+              Situated in Île de la Cité, it famously held Marie Antoinette before her execution during the French Revolution.
+            </p>
             </div>
         </div>
 
-        <div class="uk-card uk-card-hover uk-card-default card">
+        <div class="uk-card uk-box-shadow-small uk-box-shadow-hover-large uk-card-default card">
             <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Bottom</h3>
-            <p>This is the left card. It will appear side by side with the next card on most screens. This is the left card. It will appear side by side with the next card on most screens.</p>
+            <h3 class="uk-card-title">Sainte-Chapelle</h3>
+            <p>
+              A symphony in stained glass — 
+              Sainte-Chapelle turns sunlight into divine storytelling, painting the sky with sacred brilliance.
+              A Gothic gem in Paris, dazzles visitors with its breathtaking depiction of over 1,000 biblical scenes.
+            </p>
             </div>
             <div class="uk-card-media-bottom uk-cover-container">
             <img class="card-down" src="image 4.png" alt="Media Right" uk-cover />
@@ -77,6 +132,47 @@
     </div>
 
     <!--footer description simple-->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            
+            <div class="footer-column">
+              <p class="footer-copyright">© 2025 Explore France </p>
+            </div>
+    
+            <div class="footer-column">
+              <h4 class="footer-title">Follow Us</h4>
+              <div class="links">
+                <a href="#">
+                    <span uk-icon="github"></span>&nbsp;GitHub
+                </a><br>
+                <a href="#">
+                    <span uk-icon="instagram"></span>&nbsp;Instagram
+                </a><br>
+                <a href="#">
+                    <span uk-icon="tripadvisor"></span>&nbsp;Tripadvisor
+                </a> 
+              </div>
+                                 
+            </div>
+    
+            <div class="footer-column">
+              <h4 class="footer-title">Need a Guide</h4>
+              <ul class="footer-links">
+                
+              </ul>
+            </div>
+    
+            <!-- About -->
+            <div class="footer-column">
+              <h4 class="footer-title">Support Us</h4>
+              <ul class="footer-links">
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>    
   
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit-icons.min.js"></script>

@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 /* Card Feature*/
 .card-row {
     display: flex;
@@ -27,18 +30,76 @@
     }
   }
 
+  .custom-slideshow {
+    padding-top: 30px;
+    max-width: 800px; /* adjust to your desired width */
+    margin: 0 auto; /* centers the slideshow horizontally */
+}
+
+.custom-slideshow img {
+    width: 100%; /* makes all images fill the container */
+    height: 500px; /* set a fixed height */
+    object-fit: cover; /* ensures consistent cropping */
+}
+
   /* Main Body*/
+  .uk-text-justify{
+    margin: 0 20px 0;
+    padding: 0 50px 0;
+    flex-wrap: wrap;
+  }
+
   .uk-text-center{
     margin-top: 0;
+    margin-bottom: 20px;
   }
 
-  .uk-text{
-    margin: 20px 20px 20px 20px;
-    padding-left: 25px;
+  .card-column{
+    display: flex; 
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px;
+    justify-content: center;
     text-align: justify;
+    border-top: 1px solid #0707078c;
+    background: transparent;
+    color: #6c757d;
   }
 
-  .t2{
-    padding-left: 25px;
-    padding-right: 30px;
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap; /* decides how an elemenet shows when screen is resized*/
+    gap: 30px;
+  }
+
+  .footer-column {
+    padding-left: 20px;
+    flex: 1;
+    min-width: 12rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.75rem;
+    color: black;
+  }
+
+  .footer-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+
+  .links a {
+    text-decoration: none;
+    align-items: center;
+    color: #555;
+    padding-bottom: 1rem;
+  }
+  
+  .links a:hover {
+    text-decoration: none;
+    color: #000;
   }

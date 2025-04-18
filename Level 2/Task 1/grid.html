@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cult.fit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        body {
+            padding-top: 200px;
+        }        
+        header{
+            margin-bottom: 100px;
+        }
+        @media (max-width: 768px) {
+            body{
+              padding-top: 0px; /* slightly more for collapsed navbar */
+            }
+            header{
+                margin-bottom: -10px;
+            }
+          }          
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/Level 2/Task 1/img/image.png" height="40px" width="110px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facilities">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technology">Fitness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nutrition">Nutrition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="container text-center hero-content">
+            <h1>
+                <img src="/Level 2/Task 1/img/image copy 2.png" alt="Fitness Logo" class="img-fluid">
+              </h1>              
+            <h2>A fitness movement that is worth breaking a sweat for</h2>
+            <blockquote><i>Results happen over time, not overnight. Work hard, stay consistent.</i></blockquote>
+            <p><img src="/Level 2/Task 1/img/image copy 3.png" class="img-fluid" height="60px" width="60px">
+                <br><br>Success doesn't happen overnight. It's the quiet discipline, the choice to keep going even when the results aren't visible yet, 
+                that truly shapes your path. 
+                Every drop of effort, every step forward, no matter how small, adds up over time.
+                Don’t get discouraged if you don’t see immediate changes. Great things are built brick by brick—with patience, consistency, and hard work. Every day you show up, you’re laying the foundation for something powerful. Trust the process. Your future self will thank you.
+            </p>
+            
+        </div>
+    </header>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>State-of-the-Art Facilities</h2>
+                <p>Experience fitness in a premium environment designed for results</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card facility-card">
+                        <div class="facility-icon">
+                            <i class="fa fa-dumbbell"></i>
+                        </div>
+                        <h3>Pro Grade Equipments</h3>
+                        <p>Latest generation cardio machines, scientific weights, and special training machies for each sports.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card  facility-card">
+                        <div class="facility-icon">
+                            <i class="fas fa-suitcase"></i>
+                        </div>
+                        <h3>Curated Amenities</h3>
+                        <p>Spacious locker rooms with sauna, steam room, massages and showers with complimentary toiletries all accessible at your finger tips.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card facility-card">
+                        <div class="facility-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Session Fitness</h3>
+                        <p>Over 50 weekly classes including HIIT, Yoga, Zumba, Aerobics, and specialized functional training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans Section -->
+    <section id="plans" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Membership Plans</h2>
+                <p>Choose the membership that matches your fitness journey</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card">
+                        <div class="card-header text-center">
+                            <h3>Cultpass ELITE</h3>
+                            <div class="price">₹499<span>/month</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> Full gym access</li>
+                                <li><i class="fas fa-check"></i> 2 group classes per week</li>
+                                <li><i class="fas fa-check"></i> Basic fitness assessment</li>
+                                <li><i class="fas fa-check"></i> App access for workout tracking</li>
+                                <li><i class="fas fa-times"></i> Nutrition consultation</li>
+                                <li><i class="fas fa-times"></i> Personal training sessions</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-primary btn-block">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card featured">
+                        <div class="card-header text-center">
+                            <span class="featured-tag">Most Popular</span>
+                            <h3>Cultpass PRO</h3>
+                            <div class="price">₹899<span>/month</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                                <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                                <li><i class="fas fa-check"></i> Advanced fitness assessment</li>
+                                <li><i class="fas fa-check"></i> Full technology suite access</li>
+                                <li><i class="fas fa-check"></i> Monthly nutrition consultation</li>
+                                <li><i class="fas fa-check"></i> 1 personal training session/month</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary btn-block">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card plan-card">
+                        <div class="card-header text-center">
+                            <h3>Cultpass SELECT</h3>
+                            <div class="price">₹1499<span>/month</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="plan-features">
+                                <li><i class="fas fa-check"></i> VIP 24/7 access with guest passes</li>
+                                <li><i class="fas fa-check"></i> Priority class booking</li>
+                                <li><i class="fas fa-check"></i> Complete health & fitness assessment</li>
+                                <li><i class="fas fa-check"></i> Premium technology features</li>
+                                <li><i class="fas fa-check"></i> Weekly nutrition consultations</li>
+                                <li><i class="fas fa-check"></i> 4 personal training sessions/month</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline-primary btn-block">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image gallery -->
+    <section id="technology" class="py-5 bg-light">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2>Image Galleria</h2>
+            <p>Experience our facility and equipment as much as you like</p>
+          </div>
+      
+          <div id="techCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+            <div class="carousel-inner shadow">
+              <div class="carousel-item active">
+                <img style="height: 600px; object-fit: cover;" src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Gym Image 1">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 600px; object-fit: cover;" src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Gym Image 2">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 600px; object-fit: cover;" src="https://images.unsplash.com/photo-1584863231364-2edc166de576?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Gym Image 3">
+              </div>
+            </div>
+      
+            <!--Buttons-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark bg-opacity-25 rounded-circle p-3" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark bg-opacity-25 rounded-circle p-3" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>      
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="nutrition-content">
+                        <h2>In-House Nutrition Experts</h2>
+                        <p class="lead">Our certified dieticians create personalized nutrition plans to complement your fitness regimen.</p>
+                        <ul class="feature-list">
+                            <li>Personalized meal planning based on your goals</li>
+                            <li>Nutritional analysis and body composition testing</li>
+                            <li>Supplement recommendations and guidance</li>
+                            <li>Food journal reviews and feedback</li>
+                            <li>Support for special dietary needs and restrictions</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nutrition-image">
+                        <img src="/Level 2/Task 1/img/trainer 1.webp" alt="Nutrition Consultation" class="img-fluid shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="py-5 bg-light">
+        <div class="container">
+          <div class="section-header text-center mb-5">
+            <h2>Cutting-Edge Fitness Technology</h2>
+            <p>Track your progress with precision using our advanced systems</p>
+          </div>
+
+          <div class="row align-items-stretch">
+            <!-- Right Section (YouTube Video) -->
+            <div class="col">
+              <div class="ratio ratio-16x9 h-70">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/g3wMyZSv-eA?si=0XTR8EdXrzfjPFN6"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Ready to Transform Your Fitness?</h2>
+                    <p>Contact us or visit our gym to learn more about our facilities and membership options.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>&nbsp; Curefit HQ Office #17/17C BDA 3rd Sector, HSR Layout, Bengaluru, Karnataka, 560102</p>
+                        <p><i class="fas fa-phone"></i>&nbsp; (+91) 875-123-4567</p>
+                        <p><i class="fas fa-envelope"></i>&nbsp; hello@cult.fit</p>
+                        <p><i class="fas fa-clock"></i>&nbsp; Mon-Fri: 5am-11pm, Sat-Sun: 7am-9pm</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected>I'm interested in...</option>
+                                <option>Membership Information</option>
+                                <option>Free Trial</option>
+                                <option>Personal Training</option>
+                                <option>Nutrition Consultation</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/Level 2/Task 1/img/image copy.png" height="35px" width="130px" alt="cult.fit Logo">
+                    <br><br>
+                    <p>At cult.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, 
+                        Medical & lifestyle care hassle-free.#BeBetterEveryDay</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#plans">Membership</a></li>
+                        <li><a href="#nutrition">Nutrition</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Membership Agreement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; cult.fit Pvt. Ltd.<br>All rights reserved to the original owner.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="grid.js"></script>
+</body>
+</html>

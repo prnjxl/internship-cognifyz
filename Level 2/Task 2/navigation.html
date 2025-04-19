@@ -3,10 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger Menu</title>
-    <link rel="stylesheet" href="navigation.css">
+    <title>William Shakespear</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="navigation.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit-icons.min.js"></script>
+    
 </head>
 <body>
-    <p>Will need media queries for disabling the nav icons and replacing them with Hamburger menu nav</p>
+    <!-- Navigation Bar -->
+    <div class="uk-position-top">
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo" href="#">
+                            <img src="/Level 2/Task 2/logo.png" height="130px" width="135px">
+                        </a>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="uk-navbar-center uk-visible@m">
+                        <ul class="uk-navbar-nav uk-hover">
+                            <li><a href="#article">Article</a></li>
+                            <li><a href="#play">Plays</a></li>
+                            <li><a href="#more">More</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  
+                    <!-- Dropdown Mobile Menu -->
+                    <div id="mobileMenu" class="mobile-menu">
+                      <a href="#article">Article</a>
+                      <a href="#play">Plays</a>
+                      <a href="#more">More</a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+    
+    <!-- Main Content  -->
+    <div class="main-content">
+        <div class="uk-container uk-margin-medium-top">
+            <div class="uk-flex uk-flex-middle uk-grid" uk-grid>
+                <div class="uk-width-2-3@m">
+                    <h1 class="uk-text-lead">You Know Him: The Bard of Avon </h1>
+                    <p><em>William Shakespeare’s</em> literary style remains one of the most influential in history.
+                        His use of language, rhythm, and dramatic structure not only defined Elizabethan literature but also shaped the future of English storytelling and theatre.<br>
+                        Shakespeare frequently employed <b><i>iambic pentameter</i></b> a rhythmic scheme consisting of ten syllables per line with alternating stress. 
+                        This gave his verse a musical quality, especially in his sonnets and dialogues. Beyond form, he was a master of <b><i>wordplay</i></b>, often using puns, metaphors, and double entendres to add depth and wit to his characters’ conversations.</p>
+                </div>
+        
+                <!-- Image -->
+                <div class="uk-width-1-3@m uk-text-center">
+                    <img src="/Level 2/Task 2/william.webp" alt="William Shakespeare" height="400px" width="200px">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Articles -->
+        <article id="article" class="uk-article uk-container uk-margin-medium">
+            <h2 class="uk-article-title">
+                <a class="uk-link-reset" href="">The influence of Shakespeare on the <br>English Language</a>
+            </h2>
+            <p class="uk-article-meta">Written by <a href="#">British Council English</a> on 19 April 2025. Posted on their <a href="#">Blog</a></p>
+            <p class="uk-text-lead">
+                No single person has had such a great impact on the English language as Shakespeare. His cause for creating new words either by bowrowing from other languages or by adding prefixers and sufixes to existing words is still unknown to the world.
+            </p>
+            <p>
+                If there’s one thing that William Shakespeare did instinctively, it was to invent memorable words and phrases. (‘Instinctively’ was one of them – it’s in his play The Tempest!)<br>
+                In modern English, it’s almost impossible to have a conversation without using words and phrases Shakespeare invented. 
+                It’s thought that he created or introduced us to 1,700 words – from alligator right through to zany. As for Shakespeare phrases, 
+                he gave us a huge number of everyday idioms such as one fell swoop, elbow room and to eat out of house and home.<br>
+                There are lots of theories about why Shakespeare invented so many words. 
+                He may have adapted some so they had the right number of syllables for his purpose. He probably created others to have a certain meaning. 
+                Whatever the reasons, one thing is clear – Shakespeare loved to play with language. 
+            </p>
+            <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                <div>
+                    <a class="uk-button uk-button-text" href="#">Read more</a> <!-- Add modal -->
+                </div>
+                <div>
+                    <a class="uk-button uk-button-text" href="#">Share your thought</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Play Cover -->
+        <div id="play" class="uk-container uk-margin-large-top uk-margin-large-bottom">
+            <h2 class="uk-heading-line uk-text-center uk-text-title"><span>Masterpieces of Art</span></h2>
+            
+            <!-- Slideshow Container -->
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" 
+            uk-slider="center: true; autoplay: true; autoplay-interval: 2200;">
+                <ul class="uk-slider-items uk-grid uk-grid-small">
+                    <li class="uk-width-4-5 uk-width-3-4@s uk-width-1-2@m">
+                        <div class="image-container">
+                            <img src="/Level 2/Task 2/hamlet.jpg" alt="Hamlet" width="1200" height="1888">
+                            <a class="uk-position-absolute uk-transform-center" style="left: 50%; top: 70%" href="https://shakespeare.mit.edu/hamlet/full.html" target="_blank" uk-marker></a>
+                            <div class="image-overlay">
+                                <h3 class="uk-margin-remove">Hamlet</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-4-5 uk-width-3-4@s uk-width-1-2@m">
+                        <div class="image-container">
+                            <img src="/Level 2/Task 2/macbeth.jpg" alt="Macbeth" width="1200" height="1888">
+                            <a class="uk-position-absolute uk-transform-center" style="left: 30%; top: 40%" href="https://shakespeare.mit.edu/macbeth/full.html" target="_blank" uk-marker></a>
+                            <div class="image-overlay">
+                                <h3 class="uk-margin-remove">Macbeth</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-4-5 uk-width-3-4@s uk-width-1-2@m">
+                        <div class="image-container">
+                            <img src="/Level 2/Task 2/romeo.jpg" alt="Romeo and Juliet"  width="1200" height="1888">
+                            <a class="uk-position-absolute uk-transform-center" style="left: 20%; top: 30%" href="https://shakespeare.mit.edu/romeo_juliet/full.html" target="_blank" uk-marker></a>
+                            <div class="image-overlay">
+                                <h3 class="uk-margin-remove">Romeo and Juliet</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="uk-width-4-5 uk-width-3-4@s uk-width-1-2@m">
+                        <div class="image-container">
+                            <img src="/Level 2/Task 2/tempest.jpg" alt="The Tempest"  width="1200" height="1888">
+                            <a class="uk-position-absolute uk-transform-center" style="left: 60%; top: 40%" href="https://shakespeare.mit.edu/tempest/full.html" target="_blank" uk-marker></a>
+                            <div class="image-overlay">
+                                <h3 class="uk-margin-remove">The Tempest</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <a class="uk-position-center-left uk-position-small custom-nav-button" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small custom-nav-button" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+            
+        </div>
+    
+        <!-- More About Shakespear -->
+         <div id="more" class="uk-container uk-margin-large-top uk-margin-large-bottom">
+            <h2 class="uk-text-center uk-text-title"><span>More About Shakespeare</span></h2>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/JPA-Drr4iFs?si=h24iFWPBvb71zU8G&amp;controls=0" 
+            title="William Shakespear" frameborder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture;" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            ></iframe>
+    </div>
+    
+        <!-- Quote -->
+         <div class="uk-container quote">
+            <blockquote class="uk-text uk-text uk-margin-small">
+                <p><em>To be, or not to be:</em> that is the question:
+                    Whether 'tis nobler in the mind to suffer
+                    The slings and arrows of outrageous fortune,
+                    Or to take arms against a sea of troubles,
+                    And by opposing end them. To die: to sleep;
+                    No more; and by a sleep to say we end
+                    The heart-ache and the thousand natural shocks
+                    That flesh is heir to, 'tis a consummation
+                    Devoutly to be wish'd. To die, to sleep;
+                    To sleep: perchance to dream: ay, there's the rub;
+                    For in that sleep of death what dreams may come
+                    When we have shuffled off this mortal coil,
+                    Must give us pause: there's the respect
+                    That makes calamity of so long life;
+                </p>
+                <p>For who would bear the whips and scorns of time,
+                    The oppressor's wrong, the proud man's contumely,
+                    The pangs of disprized love, the law's delay,
+                    The insolence of office and the spurns
+                    Of worthy men, the good men's wrongs,
+                    When he himself might quiet take,
+                    The weary stage? The undiscovered country
+                    From whose bourn no traveller returns,
+                    Puzzles the will, and makes us rather bear
+                    Those ills we have, than fly to others that we know not of?
+                    Thus conscience does make cowards of us all,
+                    And thus the native hue of resolution
+                    Is sicklied o'er with the pale cast of thought,
+                    And enterprises of great pith and moment
+                    With this regard their currents turn awry,
+                    And lose the name of action</p>
+            </blockquote><br>
+            <cite>&nbsp;Hamlet, William Shakespeare</cite>
+         </div>
+         <div></div>>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobileMenu").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

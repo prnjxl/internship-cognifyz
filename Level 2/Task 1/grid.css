@@ -431,15 +431,20 @@ h5{
 /* Responsive Styles */
 @media (max-width: 991px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .hero h2 {
     font-size: 1.5rem;
   }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0px 15px 0px;
+  }
   
   .navbar-collapse {
-    background-color: rgba(33, 37, 41, 0.95);
+    background-color: var(--light-color);
     padding: 15px;
     border-radius: var(--border-radius);
     margin-top: 10px;
@@ -450,9 +455,16 @@ h5{
   }
   
   .plan-card.featured {
-    transform: scale(1);
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+  
+  .plan-card{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .plan-card:hover {
+    transform: translateY(-10px);
   }
   
   .plan-card.featured:hover {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cult.fit</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.19/css/uikit.min.css" />
     <link rel="stylesheet" href="grid.css">
     <style>
         .navbar-toggler{
@@ -32,14 +33,11 @@
     </style>
 </head>
 <body>
-    <!-- UIkit Card elements with image and text -->
 
-
-
-    <!-- Navigation -->
+    <!-- Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="/Level 2/Task 1/img/image.png" height="40px" width="110px"></a>
+            <a class="navbar-brand" href="#"><img src="image.png" height="40px" width="110px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,65 +66,58 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="container text-center hero-content">
-            <h1>
-                <img src="/Level 2/Task 1/img/image copy 2.png" alt="Fitness Logo" class="img-fluid">
-              </h1>              
-            <h2>A fitness movement that is worth breaking a sweat for</h2>
-            <blockquote><i>Results happen over time, not overnight. Work hard, stay consistent.</i></blockquote>
-            <p><img src="/Level 2/Task 1/img/image copy 3.png" class="img-fluid" height="60px" width="60px">
-                <br><br>Success doesn't happen overnight. It's the quiet discipline, the choice to keep going even when the results aren't visible yet, 
-                that truly shapes your path. 
-                Every drop of effort, every step forward, no matter how small, adds up over time.
-                Don’t get discouraged if you don’t see immediate changes. Great things are built brick by brick—with patience, consistency, and hard work. Every day you show up, you’re laying the foundation for something powerful. Trust the process. Your future self will thank you.
-            </p>
-            
-        </div>
-    </header>
+    <!-- Load up -->
+    <video id="background-video" autoplay muted loop class="video-container">
+        <source src="cultfit promo.mp4" type="video/mp4">
+    </video>
 
-    <!-- Facilities Section -->
-    <section id="facilities" class="py-5">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <h2>State-of-the-Art Facilities</h2>
-                <p>Experience fitness in a premium environment designed for results</p>
+    <!-- Facilities -->
+    <section id="facilities" class="uk-section">
+        <div class="uk-container">
+            <div class="section-header uk-text-center">
+                <h2 class="uk-heading-medium">Future-Ready Impactful Facilities</h2>
+                <p class="uk-text-lead">Experience fitness in a premium environment built for results—where cutting-edge equipment, expert-led sessions, 
+                    and modern amenities come together to help you train smarter, feel stronger, and achieve more every day.</p>
             </div>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card plan-card facility-card">
-                        <div class="facility-icon">
-                            <i class="fa fa-dumbbell"></i>
-                        </div>
-                        <h3>Pro Grade Equipments</h3>
-                        <p>Latest generation cardio machines, scientific weights, and special training machies for each sports.</p>
+            
+            <div class="uk-grid-match uk-grid-medium uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+
+                <div>
+                    <div class="facility-card uk-card">
+                        <img src="pro eqp.webp" alt="Pro Grade Equipment" class="facility-image">
+                        <h3>Pro Grade Equipment</h3>
+                        <p>Discover the next level of fitness with our latest-generation cardio machines, scientifically designed weights, 
+                            and specialized training equipment for every sport. 
+                            Perfect for those who want to train smarter and perform better—step in and feel the difference!</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card plan-card  facility-card">
-                        <div class="facility-icon">
-                            <i class="fas fa-suitcase"></i>
-                        </div>
+                
+                <div>
+                    <div class="facility-card uk-card">
+                        <img src="massage.jpg" alt="Curated Amenities" class="facility-image">
                         <h3>Curated Amenities</h3>
-                        <p>Spacious locker rooms with sauna, steam room, massages and showers with complimentary toiletries all accessible at your finger tips.</p>
+                        <p>Indulge in comfort and convenience with our spacious locker rooms, complete with rejuvenating saunas, 
+                            soothing steam rooms, relaxing massages, and refreshing showers—all with complimentary toiletries at your fingertips. 
+                            Everything you need to unwind after a powerful workout is right here, waiting for you.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card plan-card facility-card">
-                        <div class="facility-icon">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <h3>Session Fitness</h3>
-                        <p>Over 50 weekly classes including HIIT, Yoga, Zumba, Aerobics, and specialized functional training.</p>
+                
+                <div>
+                    <div class="facility-card uk-card">
+                        <img src="zumba.jpg" alt="Session Fitness" class="facility-image">
+                        <h3>Regular Fitness Sessions</h3>
+                        <p>Energize your fitness journey with over 50 weekly classes, including high-intensity HIIT, 
+                            calming Yoga, fun-filled Zumba, dynamic Aerobics, and targeted functional training sessions. 
+                            There's something for everyone—find your perfect fit and stay motivated all week long!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
-    <!-- Membership Plans Section -->
+    <!-- Membership Plans -->
     <section id="plans" class="py-5 bg-light">
         <div class="container">
             <div class="section-header text-center mb-5">
@@ -149,7 +140,7 @@
                                 <li><i class="fas fa-times"></i> Nutrition consultation</li>
                                 <li><i class="fas fa-times"></i> Personal training sessions</li>
                             </ul>
-                            <a href="#contact" class="btn btn-outline-primary btn-block">Select Plan</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-block" style="text-decoration: none;">Select Plan</a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +160,7 @@
                                 <li><i class="fas fa-check"></i> Monthly nutrition consultation</li>
                                 <li><i class="fas fa-check"></i> 1 personal training session/month</li>
                             </ul>
-                            <a href="#contact" class="btn btn-primary btn-block">Select Plan</a>
+                            <a href="#contact" class="btn btn-primary btn-block" style="text-decoration: none;">Select Plan</a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +179,7 @@
                                 <li><i class="fas fa-check"></i> Weekly nutrition consultations</li>
                                 <li><i class="fas fa-check"></i> 4 personal training sessions/month</li>
                             </ul>
-                            <a href="#contact" class="btn btn-outline-primary btn-block">Select Plan</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-block" style="text-decoration: none;">Select Plan</a>
                         </div>
                     </div>
                 </div>
@@ -196,13 +187,14 @@
         </div>
     </section>
 
-    <!-- Image gallery -->
+    <!-- Image Gallery -->
     <section id="technology" class="py-5 bg-light">
         <div class="container">
           <div class="section-header text-center mb-5">
             <h2>Image Galleria</h2>
-            <p>Experience our facility and equipment as much as you like</p>
-          </div>
+            <p>Enjoy unlimited access to our world-class facilities—train, relax, and recharge as often as you like. 
+                With full freedom to explore every machine, class, and wellness service, your fitness journey is truly on your terms.</p>
+          
       
           <div id="techCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
             <div class="carousel-inner shadow">
@@ -228,9 +220,10 @@
             </button>
           </div>
         </div>
+        </div>
       </section>      
 
-    <!-- Nutrition Section -->
+    <!-- Nutrition -->
     <section id="nutrition" class="py-5">
         <div class="container">
             <div class="row align-items-center">
@@ -250,26 +243,27 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="nutrition-image">
-                        <img src="/Level 2/Task 1/img/trainer 1.webp" alt="Nutrition Consultation" class="img-fluid shadow">
+                        <img src="trainer 1.webp" alt="Nutrition Consultation" class="img-fluid shadow">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technology Section -->
+    <!-- Vid -->
     <section id="technology" class="py-5 bg-light">
         <div class="container">
           <div class="section-header text-center mb-5">
-            <h2>Cutting-Edge Fitness Technology</h2>
-            <p>Track your progress with precision using our advanced systems</p>
+            <h2>Remagine Fitness and Sports</h2>
+            <p>Explore every corner of our state-of-the-art facility—designed to inspire, energize, and support your fitness journey. 
+                From cutting-edge equipment to luxurious recovery zones, there’s something here for every goal and every level.</p>
           </div>
 
           <div class="row align-items-stretch">
-            <!-- Right Section (YouTube Video) -->
+
             <div class="col">
               <div class="ratio ratio-16x9 h-70">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/g3wMyZSv-eA?si=0XTR8EdXrzfjPFN6"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/g3wMyZSv-eA?si=0XTR8EdXrzfjPFN6"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -277,7 +271,7 @@
       </section>
       
 
-    <!-- Contact Section -->
+    <!-- Contact Info -->
     <section id="contact" class="py-5">
         <div class="container">
             <div class="row">
@@ -326,7 +320,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="/Level 2/Task 1/img/image copy.png" height="35px" width="130px" alt="cult.fit Logo">
+                    <img src="image copy.png" height="35px" width="130px" alt="cult.fit Logo">
                     <br><br>
                     <p>At cult.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, 
                         Medical & lifestyle care hassle-free.#BeBetterEveryDay</p>
@@ -339,8 +333,8 @@
                 </div>
                 <div class="col-md-3">
                     <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
+                    <ul class="footer-links" >
+                        <li ><a href="#home">Home</a></li>
                         <li><a href="#facilities">Facilities</a></li>
                         <li><a href="#plans">Membership</a></li>
                         <li><a href="#nutrition">Nutrition</a></li>
@@ -358,14 +352,55 @@
             </div>
             <div class="row mt-3">
                 <div class="col-12 text-center">
-                    <p class="mb-0">&copy; cult.fit Pvt. Ltd.<br>All rights reserved to the original owner.</p>
+                    <p class="mb-0">&copy; cult.fit Pvt. Ltd.<br>This is just a sample website for internship. All rights reserved to the original owner.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('background-video');
+            
+            // Force video to load
+            video.load();
+            
+            // Add a play trigger to ensure autoplay works properly
+            setTimeout(function() {
+                video.play()
+                    .catch(function(error) {
+                        console.log("Video autoplay was prevented: ", error);
+                        // If autoplay fails, we still have the poster image
+                    });
+            }, 1000);
+            
+            // Ensure video covers the container properly
+            function resizeVideo() {
+                const container = document.querySelector('.video-container');
+                const containerHeight = container.offsetHeight;
+                const containerWidth = container.offsetWidth;
+                
+                // Adjust video size based on container aspect ratio
+                if ((containerWidth / containerHeight) < (16/9)) {
+                    video.style.width = 'auto';
+                    video.style.height = '100%';
+                } else {
+                    video.style.width = '100%';
+                    video.style.height = 'auto';
+                }
+            }
+            
+            // Call on page load and window resize
+            resizeVideo();
+            window.addEventListener('resize', resizeVideo);
+        });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.19/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.19/js/uikit-icons.min.js"></script>
+
     <script src="grid.js"></script>
 </body>
 </html>

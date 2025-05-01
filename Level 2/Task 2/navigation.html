@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Shakespear</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/css/uikit.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="navigation.css"/>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit-icons.min.js"></script>
@@ -48,8 +51,24 @@
             
         </nav>
     </div>
+
+    <!-- Video loading opening part -->
+    <div class="video-hero">
+        <video autoplay muted loop id="background-video">
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay">
+            <div class="uk-container">
+                <h1>Discover Shakespeare</h1>
+                <p>Explore the timeless works of the world's greatest playwright</p>
+                <a href="#article" class="uk-button uk-button-default">Learn More</a>
+            </div>
+        </div>
+    </div>
     
     <!-- Main Content  -->
+    
     <div class="main-content">
         <div class="uk-container uk-margin-medium-top">
             <div class="uk-flex uk-flex-middle uk-grid" uk-grid>
@@ -157,7 +176,9 @@
             referrerpolicy="strict-origin-when-cross-origin" 
             ></iframe>
     </div>
-    
+        <div>
+            <h2 style="text-align: center;">Famous Lines from Shakespear</h2>
+        </div>
         <!-- Quote -->
          <div class="uk-container quote">
             <blockquote class="uk-text uk-text uk-margin-small">
@@ -195,7 +216,9 @@
             </blockquote><br>
             <cite>&nbsp;Hamlet, William Shakespeare</cite>
          </div>
-         <div></div>>
+         <div>
+            <br>
+         </div>
 
     <script>
         function toggleMenu() {

@@ -1,0 +1,98 @@
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+.uk-navbar-container {
+      background-color: rgba(0,0,0, 0.3) !important; 
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      border: none;
+}
+
+.uk-logo{
+      color: white !important;
+}
+
+main {
+      margin: 0;
+      padding: 0;
+}
+
+.wildlife {
+    height: 100vh;
+    background: url('land.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: -1;
+    font-family: 'Lato', sans-serif;
+}
+
+.wildlife::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* semi-transparent dark layer */
+    z-index: 0;
+}
+
+.wildlife span, .wildlife h1 {
+    font-size: 4rem;
+    font-family: "Cedarville Cursive", cursive;
+    color: white !important;
+    padding-top: 50px;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.wildlife h4 {
+    font-family: "Lato", sans-serif;
+    color: rgb(255, 246, 246);
+    font-size: 10rem;
+    font-weight: 700;
+    z-index: 1;
+    margin: 10px 0;
+}
+
+.wildlife p {
+    font-size: 1.2rem;
+    z-index: 1;
+    color: white;
+}
+
+.wildlife img {
+    vertical-align: middle;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.slideshow{
+    margin-top: 40px;
+}
+
+.slideshow p{
+    padding: 0px 50px;
+    text-align: center;
+}

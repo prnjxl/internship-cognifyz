@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-only Image Gallery with Enlarging Thumbnails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .thumbnail {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+        }
+        
+        /* The checkbox approach */
+        input[type="checkbox"] {
+            display: none;
+        }
+        
+        .fullsize {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .fullsize img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        /* When checkbox is checked, show the fullsize image */
+        input[type="checkbox"]:checked + .fullsize {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Image Gallery</h1>
+    
+    <div class="gallery">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <label for="img1">
+                <img src="/api/placeholder/200/150?text=Image 1" alt="Image 1" class="thumbnail">
+            </label>
+            <input type="checkbox" id="img1">
+            <div class="fullsize">
+                <img src="/api/placeholder/800/600?text=Image 1 (Large)" alt="Large Image 1">
+                <label for="img1" class="close">&times;</label>
+            </div>
+        </div>
+        
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <label for="img2">
+                <img src="/api/placeholder/200/150?text=Image 2" alt="Image 2" class="thumbnail">
+            </label>
+            <input type="checkbox" id="img2">
+            <div class="fullsize">
+                <img src="/api/placeholder/800/600?text=Image 2 (Large)" alt="Large Image 2">
+                <label for="img2" class="close">&times;</label>
+            </div>
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <label for="img3">
+                <img src="/api/placeholder/200/150?text=Image 3" alt="Image 3" class="thumbnail">
+            </label>
+            <input type="checkbox" id="img3">
+            <div class="fullsize">
+                <img src="/api/placeholder/800/600?text=Image 3 (Large)" alt="Large Image 3">
+                <label for="img3" class="close">&times;</label>
+            </div>
+        </div>
+        
+        <!-- Image 4 -->
+        <div class="gallery-item">
+            <label for="img4">
+                <img src="/api/placeholder/200/150?text=Image 4" alt="Image 4" class="thumbnail">
+            </label>
+            <input type="checkbox" id="img4">
+            <div class="fullsize">
+                <img src="/api/placeholder/800/600?text=Image 4 (Large)" alt="Large Image 4">
+                <label for="img4" class="close">&times;</label>
+            </div>
+        </div>
+        
+        <!-- Image 5 -->
+        <div class="gallery-item">
+            <label for="img5">
+                <img src="/api/placeholder/200/150?text=Image 5" alt="Image 5" class="thumbnail">
+            </label>
+            <input type="checkbox" id="img5">
+            <div class="fullsize">
+                <img src="/api/placeholder/800/600?text=Image 5 (Large)" alt="Large Image 5">
+                <label for="img5" class="close">&times;</label>
+            </div>
+        </div>
+        
+        <!-- Image 6 -->
+        <div class="gallery-item">
+            <label for="img6">
+                <img src="/api/placeholder/200/150?text=Image 6" alt="Image 6" class="thumbnail">
+            </label>
+            <input type="checkbox" id="img6">
+            <div class="fullsize">
+                <img src="/api/placeholder/800/600?text=Image 6 (Large)" alt="Large Image 6">
+                <label for="img6" class="close">&times;</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
